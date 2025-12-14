@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Regles simples"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+                             http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>
+        Regles simples per millorar la qualitat del codi Java en la pràctica de comptes.
+    </description>
+
+    <!-- Regla 1: Evita mètodes buits -->
+    <rule ref="category/java/errorprone.xml/EmptyMethod"/>
+
+    <!-- Regla 2: Evita variables locals no utilitzades -->
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+
+    <!-- Regla 3: Comprova que els noms de mètodes segueixen convencions -->
+    <rule ref="category/java/naming.xml/MethodNamingConventions"/>
+
+</ruleset>
